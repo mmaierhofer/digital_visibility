@@ -1,0 +1,3 @@
+#!/bin/bash -i
+
+MSYS_NO_PATHCONV=1 docker run --rm -v "${PWD}/":/data -w /data cytopia/phpcs:3-php7.3 ./app/src ./app/tests --standard=PSR2 --basepath=/data/
