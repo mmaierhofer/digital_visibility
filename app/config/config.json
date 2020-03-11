@@ -1,0 +1,54 @@
+{
+	"mapKeywords": [
+		"Foo",
+		"Bar"
+	],
+	"locationServiceKeywords": [
+		"Anfahrt",
+		"finden uns"
+	],
+	"screenshotsAssetsPath": "/../../assets/screenshots/",
+	"lighthouseApiKey": "AIzaSyCgLaLGxJckns7AZrstxNpmbPqVrjUdNBQ",
+	"socialMediaRegexList": {
+		"facebook": [
+			"/(?:https?:\\\/\\\/)?(?:www\\.|m\\.|touch\\.)?(?:facebook\\.com|fb(?:\\.me|\\.com))\\\/(?!$)(?:(?:\\w)*#!\\\/)?(?:pages\\\/)?(?:photo\\.php\\?fbid=)?(?:[\\w\\-]*\\\/)*?(?:\\\/)?(?:profile\\.php\\?id=)?([^\\\/?&\\s\\\"]*)(?:\\\/|&|\\?)*/i",
+			"/http(s)?:\\\/\\\/(www\\.)?(facebook|fb)\\.com\\\/[A-z0-9_\\-\\.]+\\\/?/i"
+		],
+		"twitter": [
+			"/http(s)?:\\\/\\\/(.*\\.)?twitter\\.com\\\/[A-z0-9_]+\\\/?/i"
+		],
+		"instagram": [
+			"/https?:\\\/\\\/(www\\.)?instagram\\.com\\\/([A-Za-z0-9_](?:(?:[A-Za-z0-9_]|(?:\\.(?!\\.))){0,28}(?:[A-Za-z0-9_]))?)/i"
+		]
+	},
+	"businessDirectoryRegexList": {
+		"yelp": [
+			"/http(?:s)?:\\\/\\\/(?:www\\.)?yelp\\.(?:com|de)\\\/biz\\\/([\\w-]+)\\\/?/i"
+		],
+		"foursquare": [
+			"/http(?:s)?:\\\/\\\/(?:\\w+\\.)foursquare.com\\\/v\\\/([\\w-]+)\\\/([0-9A-Fa-f]*)\\\/?/i"
+		]
+	},
+	"openingHoursKeywords": [
+		"Öffnungszeit",
+		"Mo", "Di", "Mi", "Do", "Fr", "Sa", "So",
+		"Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"
+	],
+	"onlineShopKeywords" : [
+		"Sendungsverfolgung",
+		"Lieferung",
+		"Rücksendung",
+		"Warenkorb",
+		"Bestellungen",
+		"Versand",
+		"Online-Shop",
+		"Webshop",
+		"Versandkosten",
+		"Kasse",
+		"PayPal",
+		"Kreditkarte",
+		"Vorkasse",
+		"Rechnung",
+		"Abholung"
+	]
+}

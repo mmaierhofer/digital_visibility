@@ -1,0 +1,123 @@
+{
+	"$schema": "https://github.com/AliasIO/Wappalyzer/blob/master/schema.json",
+	"apps": {
+		"Magento": {
+			"cats": [
+				6
+			],
+			"cookies": {
+				"frontend": "\\;confidence:50"
+			},
+			"cpe": "cpe:/a:magento:magento",
+			"html": [
+				"<script [^>]+data-requiremodule=\"mage/\\;version:2",
+				"<script [^>]+data-requiremodule=\"Magento_\\;version:2",
+				"<script type=\"text/x-magento-init\">"
+			],
+			"icon": "Magento.png",
+			"implies": [
+				"PHP",
+				"MySQL"
+			],
+			"js": {
+				"Mage": "",
+				"VarienForm": ""
+			},
+			"script": [
+				"js/mage",
+				"skin/frontend/(?:default|(enterprise))\\;version:\\1?Enterprise:Community",
+				"static/_requirejs\\;confidence:50\\;version:2"
+			],
+			"website": "https://magento.com"
+		},
+		"OXID eShop": {
+			"cats": [
+				6
+			],
+			"html": "<!--[^-]*OXID eShop",
+			"icon": "OXID eShop.png",
+			"js": {
+				"oxCookieNote": "",
+				"oxInputValidator": "",
+				"oxLoginBox": "",
+				"oxModalPopup": "",
+				"oxTopMenu": ""
+			},
+			"website": "https://en.oxid-esales.com/en/home.html"
+		},
+		"October CMS": {
+			"cats": [
+				1
+			],
+			"cookies": {
+				"october_session=": ""
+			},
+			"icon": "October CMS.png",
+			"implies": "Laravel",
+			"website": "http://octobercms.com"
+		},
+		"WooCommerce": {
+			"cats": [
+				6
+			],
+			"html": [
+				"<!-- WooCommerce",
+				"<link rel='[^']+' id='woocommerce-(?:layout|smallscreen|general)-css'  href='https?://[^/]+/wp-content/plugins/woocommerce/assets/css/woocommerce(?:-layout|-smallscreen)?\\.css?ver=([\\d.]+)'\\;version:\\1"
+			],
+			"icon": "WooCommerce.png",
+			"implies": "WordPress",
+			"js": {
+				"woocommerce_params": ""
+			},
+			"meta": {
+				"generator": "WooCommerce ([\\d.]+)\\;version:\\1"
+			},
+			"script": "/woocommerce(?:\\.min)?\\.js(?:\\?ver=([0-9.]+))?\\;version:\\1",
+			"website": "http://www.woothemes.com/woocommerce"
+		},
+		"Shopware": {
+			"cats": [
+				6
+			],
+			"html": "<title>Shopware ([\\d\\.]+) [^<]+\\;version:\\1",
+			"icon": "Shopware.png",
+			"implies": [
+				"PHP",
+				"MySQL",
+				"jQuery",
+				"Symfony"
+			],
+			"meta": {
+				"application-name": "Shopware"
+			},
+			"script": [
+				"(?:(shopware)|/web/cache/[0-9]{10}_.+)\\.js\\;version:\\1?4:5",
+				"/jquery\\.shopware\\.min\\.js",
+				"/engine/Shopware/"
+			],
+			"website": "http://shopware.com"
+		},
+		"Shopify": {
+			"cats": [
+				6
+			],
+			"html": "<link[^>]+=['\"]//cdn\\.shopify\\.com\\;confidence:25",
+			"icon": "Shopify.svg",
+			"js": {
+				"Shopify": "\\;confidence:25"
+			},
+			"headers": {
+				"x-shopid": "\\;confidence:50",
+				"x-shopify-stage": "\\;confidence:50"
+			},
+			"url": "^https?//.+\\.myshopify\\.com",
+			"website": "http://shopify.com"
+		}
+	},
+	"categories": {
+		"1": {
+			"name": "Ecommerce",
+			"priority": 1
+		}
+	}
+}
